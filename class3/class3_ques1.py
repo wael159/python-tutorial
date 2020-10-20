@@ -13,21 +13,23 @@ def live_cell(total_sum):
         return 0
 
 # here we initialize a matrix of zeros , to make the border zeros
-A=np.zeros((4,5))
-#here we make a random 1 or 0 inside the matrix
-A[1:-1,1:-1]=np.random.randint(2,size=(2,3))
+Game_of_life=np.zeros((4, 5))
+#here we make a random 1 or 0 inside the matrix (the borders are zeros)
+Game_of_life[1:-1, 1:-1]=np.random.randint(2, size=(2, 3))
 
-# here we can check if the cell we be live or die .
-for i in range(A.shape[0]):
-    for j in range(A.shape[1]):
-        if (A[i][j]==1):
-            #checking the sum of the neighbors of the live cell
-            #total_sum=np.sum([A[i-1][j],A[i+1][j],A[i-1][j-1],A[i-1][j+1],A[i+1][j+1],A[i+1][j-1],A[i][j-1],A[i][j+1]])
-            total_sum=np.sum([A[i-1,j-1:j+2:2],A[i,j-1:j+2:2],A[i+1,j-1:j+2:2]])
-            A[i][j]=live_cell(total_sum)
-        elif ((A[i][j]==0) and (i not in [0,A.shape[0]-1]) and (j not in [0,A.shape[1]-1])):
-           total_sum2=np.sum([A[i-1,j-1:j+2:2],A[i,j-1:j+2:2],A[i+1,j-1:j+2:2]])
-           if total_sum2==3:
-               A[i][j]=1
-            else:
-               A[i][j] = 0
+# here we can check if the cell will be live or die and update it.
+for i in range(Game_of_life.shape[0]):
+    for j in range(Game_of_life.shape[1]):
+        if (Game_of_life[i][j]==1):
+            #finding the sum of all the 1's around the live cell
+            total_sum_1=np.sum([Game_of_life[i - 1, j - 1:j + 2:2], Game_of_life[i, j - 1:j + 2:2], Game_of_life[i + 1, j - 1:j + 2:2]])
+            Game_of_life[i][j]=live_cell(total_sum_1)
+        elif ((Game_of_life[i][j] == 0) and (i not in [0, Game_of_life.shape[0] - 1]) and (j not in [0, Game_of_life.shape[1] - 1])):
+            #finding the sum of all the 1's around the die cell
+           total_sum_0=np.sum([Game_of_life[i - 1, j - 1:j + 2:2], Game_of_life[i, j - 1:j + 2:2], Game_of_life[i + 1, j - 1:j + 2:2]])
+           if total_sum_0==3:
+                Game_of_life[i][j]=1
+           else:
+               Game_of_life[i][j] = 0
+
+print(Game_of_life)
