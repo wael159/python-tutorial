@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <title>Web portfolio Wael </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',     filename='main.css') }}"  media='screen and (min-width: 778px)'/>
+      <div class="head">
+        <img src="/static/imgs/wael.jpg" alt="wael" class="center">
+        <p style="color: white;">Wael dagash-data scientist</p>
+        <a href='https://il.linkedin.com/in/wael-dagash-48692b120?trk=profile-badge'><img src="/static/imgs/linkedin.png" style="width:5%"></a>
+        <a href="https://github.com/wael159"><img src="/static/imgs/github2.png" alt="github" style="width:7%"></a>
+        <a href="https://www.datacamp.com/profile/waeldagash"><img src="/static/imgs/datacamp_project.png" alt="github" style="width:7%"></a>
+      </div>
+  
+            
+    </head>    
+  <body>
+        <!-- MAIN (Center website) -->
+
+            <div id="myBtnContainer" class="container" >
+           
+                <div class="centerbtn">
+
+                    <button class="btn active" onclick="filterSelection('all')">Complete CV</button>
+                    <button class="btn" onclick="filterSelection('About')">About</button>
+                    <button class="btn" onclick="filterSelection('Education')">Education</button>
+                    <button class="btn" onclick="filterSelection('Experience')">Experience</button>
+                    <button class="btn" onclick="filterSelection('Skills')">Skills</button>
+                    <button class="btn" onclick="filterSelection('Contact')">Contact</button>
+                    <button class="btn" onclick="filterSelection('Projects')">Projects</button>
+                    <button class="btn" onclick="filterSelection('Courses')">Courses</button>
+                </div>    
+           </div>
+           <div class="intro"><p style="color:white">My name is Wael and i like to make sense out of data. I am an Analytics professional,<br> 
+            <br>
+            well versed in Machine Learning and Data Science.</p></div> 
+
+                <!-- Portfolio Gallery Grid -->
+            <img src="/static/imgs/Presentation1.gif" width="1500px" height="500px"  >
+            <div class="main">
+                <div class="row">
+                    <button class="accordion">Summary </button>
+                    <div class="column About">
+                        <div class="content">
+                            <div class="row">
+                                <div class="column-edu">
+                                  <img src="/static/imgs/datascience.png" alt="datascience" width="300" height="160">
+                                </div>
+                                <div class="column-edu">
+                                  <img src="/static/imgs/brain.png" alt="brain" width="300" height="160">
+                                </div>
+                                <div class="column-edu">
+                                  <img src="/static/imgs/machine-learning.webp" alt="machine-learning" width="300" height="160">
+                                </div>
+                              </div>  
+                        <img src="/static/imgs/About.PNG" alt="About" style="width:100%">
+                        
+                        
+                        </div>
+                    </div>
+                
+                    <button class="accordion">Education </button>
+                    <div class="column Education">
+                        <div class="content">
+                            <div class="row">
+                                <div class="column-edu">
+                                  <img src="/static/imgs/technion-icon-300x113.png"    alt="technoion" width="300" height="160">
+                                </div>
+                                <div class="column-edu">
+                                  <img src="/static/imgs/haifa-university.png" alt="neuroscience" width="300" height="160">
+                                </div>
+                                <div class="column-edu">
+                                  <img src="/static/imgs/contenuie-technion.png" alt="datascience" width="300" height="160">
+                                </div>
+                              </div>      
+                         <img src="/static/imgs/Education.PNG" alt="Education" style="width:100%">
+                         
+                         
+                        
+                        </div>
+                    </div>
+                    <button class="accordion">Experience </button>
+                    <div class="column Experience">
+                        <div class="content">
+                        <img src="/static/imgs/Experience.PNG" alt="Experience" style="width:100%">
+                        
+                        
+                        </div>
+                    </div>
+                    <button class="accordion">Skills </button>    
+                    <div class="column Skills">
+                        <div class="content">
+                        <img src="/static/imgs/Skills.PNG" alt="Skills" style="width:100%">
+                        
+                        
+                        <div class="row">
+                            <div class="column-edu">
+                              <img src="/static/imgs/microsoft office.jpg"   alt="office" width="300" height="160">
+                            </div>
+                            <div class="column-edu">
+                              <img src="/static/imgs/r-python.png" alt="r-python" width="300" height="160">
+                            </div>
+                            <div class="column-edu">
+                              <img src="/static/imgs/sql.jpg" alt="sql" width="300" height="160">
+                            </div>
+                          </div> 
+                        </div>
+                    </div> 
+                    <button class="accordion">Contact info </button>
+                    <div class="column Contact">
+                            <div class="content">
+                            <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+                            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="wael-dagash-48692b120"><a class="LI-simple-link" href='https://il.linkedin.com/in/wael-dagash-48692b120?trk=profile-badge'>Wael Dagash📊🔍</a></div>    
+                            <h4>Contact info :</h4>
+                            <h4>Phone : 050-2165547</h4>
+                            <h4>Email : waeldagash@gmail.com</h4>
+                            <h4>My github : <a href="https://github.com/wael159"><img src="/static/imgs/github.PNG" alt="github" style="width:10%"></a></h4>
+                            
+                        
+                        </div>
+                    </div>
+                    <button class="accordion">My projects </button>
+                    <div class="column Projects">
+                        <div class="content">
+                        <h1>Patient No show prediction</h1>
+                        <h4>Power point summary for the project </h4>
+                        <h4>Link for the Jupter notebook in My github : <a href="https://github.com/wael159/patient_no_show_prediction"> Patient No show prediction  </a>
+                        </h4>
+                        <h4>Link for video summary in youtube : <a href="https://www.youtube.com/watch?v=cFBWBBx65Lw"> Patient No show prediction video  </a>
+                        </h4>
+                        <iframe src="https://technionmail-my.sharepoint.com/personal/swael_campus_technion_ac_il/_layouts/15/Doc.aspx?sourcedoc={23687467-1aca-4aec-bf2a-8c48756527d0}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="1500px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                        
+                        <h1>Dahboards - Excel </h1>
+                        <h4>Here you can see an anlaysis for data sales with an interactive dashboard, you can use the filter</h4>
+                        <iframe width="1500px" height="900px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=9A8C4DAF1CCF33DC%21505&authkey=%21ANt7YC6tBW-lbHM&em=2&wdHideGridlines=True&wdInConfigurator=True"></iframe>
+                        <br>
+                        <br>
+                        <h1>VBA - Excel </h1>
+                        <h4>Here you can see an automated purchase order - by using Excel VBA </h4>
+                        <iframe width="1500px" height="900px" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=9A8C4DAF1CCF33DC%21507&authkey=%21AAKc01mmG4puuEA&em=2&AllowTyping=True&wdHideGridlines=True&wdInConfigurator=True"></iframe>
+                        <br>
+                        <br>
+                        <h1><strong>Selected Projects</strong></h1>
+                    
+                        <br>
+                        <h4><strong>Patient No show prediction</strong></h4>
+                        
+                        <div class="half-left" style="border: thin solid black">
+                          <div class="padding">
+                            <h4><a target="_blank" href="https://github.com/wael159/patient_no_show_prediction">No show prediction</a>, Here you can see the analysis for patient no show , and a prediction for the no show </h4>
+                            <h4 align="center"><a class="button small" target="_blank" href="https://github.com/wael159/patient_no_show_prediction">Visit My github to see the project </a></p>
+                          </div>
+                        </div>
+                        <div class="half-right" style="border: thin solid black">
+                          <div class="padding">
+                            <img src="/static/imgs/no-show-predict.PNG">
+                            <img src="/static/imgs/no-show.PNG">
+                          </div>
+                        </div>
+                        <div class="space"></div>
+                    </div>
+                </div> 
+                <button class="accordion">Contact info </button>
+                <div class="column Courses">
+                        <div class="content">
+                          <h4>I have completed 86 courses, 17 projects, in the datacamp - take a look </h4>
+                          <a href="https://www.datacamp.com/profile/waeldagash"><img src="/static/imgs/datacamp.png"></a>
+                        <h4>My Datacamp account- here you can see all the courses and project which i do  : <a href="https://www.datacamp.com/profile/waeldagash">Data camp account </a></h4>
+                        
+                        
+                    
+                    </div>
+                </div>    
+                    
+                </div>
+            
+            </div>
+            
+        
+          <script src='/static/java.js'></script>
+          
+    </body>
+
+</html>
+
+
